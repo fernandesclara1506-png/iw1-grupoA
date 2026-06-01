@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background-color:#d9d9d9;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* CENTRALIZA TUDO */
+.container{
+  min-height:100vh;
+  background-color:#ece9c9;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:30px;
+}
+
+/* BOTÃO HOME */
+.topo{
+  width:100%;
+  margin-bottom:40px;
+}
+
+.botao-home{
+  background-color:#f5d46b;
+  color:white;
+  text-decoration:none;
+  padding:12px 22px;
+  border-radius:14px;
+  font-family: Arial, sans-serif;
+  font-weight:bold;
+  font-size:20px;
+  display:inline-block;
+  transition:0.3s;
+}
+
+.botao-home:hover{
+  transform:scale(1.05);
+}
+
+/* CAIXA PRINCIPAL */
+.quadro{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+/* CARD */
+.formulario{
+  background-color:#e8e3a8;
+  width:420px;
+  padding:50px 40px;
+  border-radius:25px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TITULO */
+.titulo{
+  background-color:#f1efbf;
+  text-align:center;
+  border-radius:20px;
+  padding:12px;
+  color:#f4a62a;
+  font-size:32px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight:bold;
+  margin-bottom:30px;
+}
+
+/* LABEL */
+label{
+  font-size:24px;
+  display:block;
+  margin-top:15px;
+  margin-bottom:10px;
+}
+
+/* INPUT */
+input{
+  width:100%;
+  height:42px;
+  border:none;
+  border-radius:20px;
+  background-color:#f3f1c2;
+  padding-left:15px;
+  font-size:16px;
+  outline:none;
+  margin-bottom:15px;
+}
+
+
+.botoes{
+  display:flex;
+  justify-content:space-between;
+  margin-top:25px;
+  gap:15px;
+}
+
+.botoes button{
+  flex:1;
+  height:50px;
+  border:none;
+  border-radius:20px;
+  background-color:#f3e47d;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:bold;
+  color:#ff8400;
+  font-size:24px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.botoes button:hover{
+  transform:translateY(-3px);
+  background-color:#a06bf5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="topo">
+    <a href="#" class="botao-home">HOME</a>
+  </div>
+
+  <div class="quadro">
+
+    <div class="formulario">
+
+      <div class="titulo">LOGIN</div>
+
+      <form>
+        <label>Login:</label>
+        <input type="text" placeholder="Digite seu login">
+
+        <label>Senha:</label>
+        <input type="password" placeholder="Digite sua senha">
+
+        <div class="botoes">
+          <button type="button">Cadastrar</button>
+          <button type="submit">Logar</button>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
