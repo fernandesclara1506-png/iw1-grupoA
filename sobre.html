@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bruno Mars</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f2f2f2;
+    font-family:'Poppins', sans-serif;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+
+.container{
+    width:110%;
+    max-width:1900px;
+    min-height:90vh;
+    background:#F5F0D8;
+    border-radius:15px;
+    padding:40px 60px;
+    position:relative;
+    overflow:hidden;
+}
+
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:60px;
+}
+
+.menu{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    text-decoration:none;
+    background:#F6CF69;
+    color:white;
+    padding:12px 30px;
+    border-radius:15px;
+    font-size:1.1rem;
+    transition:.3s;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.divider{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:50px;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    flex:1;
+    height:2px;
+    background:#E5BF5A;
+}
+
+.star{
+    color:#E5BF5A;
+    font-size:28px;
+}
+
+
+.content{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    align-items:center;
+    gap:60px;
+}
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:5rem;
+    font-weight:600;
+    color:#111;
+    margin-bottom:20px;
+}
+
+.text-line{
+    width:300px;
+    height:3px;
+    background:#E5BF5A;
+    margin-bottom:30px;
+}
+
+.text p{
+    font-size:1.4rem;
+    line-height:1.9;
+    color:#222;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width:650px;
+}
+
+.read-more{
+    display:inline-block;
+    margin-top:40px;
+    background:#F6CF69;
+    color:white;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:40px;
+    font-size:1.1rem;
+}
+
+
+.image-area{
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+
+.bg-shape{
+    position:absolute;
+    width:520px;
+    height: 650px;
+    background:#F6CF69;
+    border-radius:50px;
+    top:-20px;
+    right:20px;
+}
+
+.image-area img{
+    width:520px;
+    max-width:100%;
+    border-radius:35px;
+    position:relative;
+    z-index:2;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.dots{
+    position:absolute;
+    width:69px;
+    height:90px;
+    background-image:radial-gradient(#E5BF5A 2px, transparent 2px);
+    background-size:15px 15px;
+}
+
+.dots1{
+    top:180px;
+    right:40px;
+}
+
+.dots2{
+    bottom:80px;
+    left:52%;
+}
+
+@media(max-width:1000px){
+
+    .content{
+        grid-template-columns:1fr;
+        text-align:center;
+        margin:auto auto 30px;
+        max-width:100%;
+        font-size:3.5rem;
+        width:100%;
+        height:100%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <nav>
+        <div class="menu">
+            <a href="#" class="btn">HOME</a>
+            <a href="#" class="btn">SOBRE</a>
+        </div>
+
+        <a href="#" class="btn">LOGIN</a>
+    </nav>
+
+    <div class="divider">
+        <span class="star">✦</span>
+    </div>
+
+    <div class="content">
+
+        <div class="text">
+
+            <h1>BRUNO MARS</h1>
+
+            <div class="text-line"></div>
+
+            <p>
+                Bruno Mars é um cantor, compositor, produtor musical e dançarino
+                norte-americano que se tornou uma das maiores estrelas da música
+                pop mundial. Conhecido por seu carisma, talento vocal e
+                apresentações cheias de energia, conquistou milhões de fãs com
+                canções que misturam pop, funk, soul, R&B e reggae.
+            </p>
+
+            <a href="#" class="read-more">
+                Saiba Mais →
+            </a>
+
+        </div>
+
+        <div class="image-area">
+
+            <div class="bg-shape"></div>
+
+            <img src="bruno-maras.jpg" alt="Bruno Mars">
+
+        </div>
+
+    </div>
+
+    <div class="dots dots1"></div>
+    <div class="dots dots2"></div>
+
+</div>
+
+</body>
+</html>
